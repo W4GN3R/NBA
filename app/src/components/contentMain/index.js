@@ -1,12 +1,18 @@
 import React from "react";
-import {Team, Wrapper, Player} from "./style"
+import {Team, Wrapper, Player, WrapperPlayer, ImgPlayer, LogoPlayer, PrimaryName, ContentWrapper} from "./style"
 
 const ContentMain = () => (
     <>
-        <Wrapper>
-            <Team>Lakers</Team>
-            <Player>Lebron James</Player>
-        </Wrapper>
+        <ContentWrapper>
+            <Wrapper>
+                <Team>Los Angeles Lakers</Team>
+                <PrimaryName>Lebron<Player> James</Player></PrimaryName>
+                <LogoPlayer/>
+            </Wrapper>
+            <WrapperPlayer>
+                <ImgPlayer/>
+            </WrapperPlayer>
+        </ContentWrapper>
     </>
 );
 
