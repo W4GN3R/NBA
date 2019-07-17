@@ -4,7 +4,7 @@ const WrapperMain = styled.main`
     display: flex;
     width: 100%;
     height: 100vh;
-    background: #3f1c63;
+    background: #000;
 `;
 
 export default WrapperMain;

@@ -1,0 +1,53 @@
+$imgLakers: "../../img/lakers.png";
+$imgBucks: "../../img/bucks.png";
+$imgCeltics: "../../img/celtics.png";
+$imgRaptrors: "../../img/raptrors.png";
+$imgRockets: "../../img/rockets.png";
+$imgWarriors: "../../img/warriors.png";
+
+.header-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 87vh;
+    padding: 0 30px;
+    &-item {
+        width: 90px;
+        height: 80px;
+        display: flex;
+        transition: 0.5s ease;
+        &.lakers {
+            margin-top: 10px;
+            background: url($imgLakers) no-repeat center;
+            background-size: contain;
+        }
+        &.houston {
+            background: url($imgRockets) no-repeat center;
+            background-size: contain;
+        }
+        &.warriors {
+            background: url($imgWarriors) no-repeat center;
+            background-size: contain;
+        }
+        &.toronto {
+            background: url($imgRaptrors) no-repeat center;
+            background-size: contain;
+        }
+        &.bucks {
+            background: url($imgBucks) no-repeat center;
+            background-size: contain;
+        }
+        &.celtics {
+            background: url($imgCeltics) no-repeat center;
+            background-size: contain;
+        }
+        &:hover {
+            height: 90px;
+            width: 90px;
+        }
+    }
+    &-link {
+        font-size: 0;
+        width: 100%;
+    }
+}

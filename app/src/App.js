@@ -1,27 +1,31 @@
 import React, { Component } from "react";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
 
-import WrapperMain from "./components/wrapperMain";
-import LogoNBA from "./components/logoNba";
-import ContentMain from "./components/contentMain";
-import HeaderWrapper from "./components/headerWrapper";
-import ImgBack from "./components/imgBack";
-
+import ContentHome from './pages/home';
+import ContentTeams from './pages/teams';
 
 import "./styles/reset.css";
+
 class App extends Component {
     render() {
         return (
         <>
-            <WrapperMain>
-                <ImgBack/>
-                <HeaderWrapper>
-                    <LogoNBA/>
-                </HeaderWrapper>
-                <ContentMain />
-            </WrapperMain>
+            <BrowserRouter>
+                <Switch>
+                    <Route path="/" exact={true} component={ContentHome} />
+                    <Route path="/lakers" component={ContentTeams} />
+                    <Route path="/warriors" component={ContentTeams} />
+                    <Route path="/celtics" component={ContentTeams} />
+                    <Route path="/toronto" component={ContentTeams} />
+                    <Route path="/bucks" component={ContentTeams} />
+                    <Route path="/houston" component={ContentTeams} />
+                    <Route path="*" component={ContentHome} />
+                </Switch>
+            </BrowserRouter>
         </>
         )
     }
 }
 
 export default App;
+

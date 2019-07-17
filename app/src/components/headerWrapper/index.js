@@ -1,9 +1,21 @@
-import styled from "styled-components";
+import React from 'react';
+import { Link } from "react-router-dom";
 
-const HeaderWrapper = styled.header`
-    display: flex;
-    padding: 20px 30px;
-    border-right: 1px solid #a0a0a0cf;
-`;
+import {Wrapper, LogoNBA} from './style';
+import HeaderMenu from './header';
+
+import './style.scss'
+
+const HeaderWrapper = () => (
+    <>
+        <Wrapper>
+            <Link to="/">
+                <LogoNBA/>
+            </Link>
+            <HeaderMenu/>
+        </Wrapper>
+    </>
+
+)
 
 export default HeaderWrapper;
