@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/NBA/static/css/main.ba82743e.chunk.css",
-    "main.js": "/NBA/static/js/main.94e30a32.chunk.js",
-    "main.js.map": "/NBA/static/js/main.94e30a32.chunk.js.map",
+    "main.css": "/NBA/static/css/main.4282783b.chunk.css",
+    "main.js": "/NBA/static/js/main.1a2f5a3e.chunk.js",
+    "main.js.map": "/NBA/static/js/main.1a2f5a3e.chunk.js.map",
     "runtime~main.js": "/NBA/static/js/runtime~main.ac4d2dc0.js",
     "runtime~main.js.map": "/NBA/static/js/runtime~main.ac4d2dc0.js.map",
-    "static/js/2.3726a1a8.chunk.js": "/NBA/static/js/2.3726a1a8.chunk.js",
-    "static/js/2.3726a1a8.chunk.js.map": "/NBA/static/js/2.3726a1a8.chunk.js.map",
+    "static/js/2.8a07bffa.chunk.js": "/NBA/static/js/2.8a07bffa.chunk.js",
+    "static/js/2.8a07bffa.chunk.js.map": "/NBA/static/js/2.8a07bffa.chunk.js.map",
     "index.html": "/NBA/index.html",
-    "precache-manifest.f59a7d66607b8245fc5f69119b076e72.js": "/NBA/precache-manifest.f59a7d66607b8245fc5f69119b076e72.js",
+    "precache-manifest.cacb58e65dacf86a07189e1e92a8ae97.js": "/NBA/precache-manifest.cacb58e65dacf86a07189e1e92a8ae97.js",
     "service-worker.js": "/NBA/service-worker.js",
-    "static/css/main.ba82743e.chunk.css.map": "/NBA/static/css/main.ba82743e.chunk.css.map",
-    "static/media/Lakers_logo.svg.png": "/NBA/static/media/Lakers_logo.svg.87744bf7.png",
-    "static/media/lebron-background.jpg": "/NBA/static/media/lebron-background.01e6d81e.jpg",
-    "static/media/lebron-principal.png": "/NBA/static/media/lebron-principal.f6f96b58.png",
+    "static/css/main.4282783b.chunk.css.map": "/NBA/static/css/main.4282783b.chunk.css.map",
+    "static/media/background-home.jpg": "/NBA/static/media/background-home.c1f17885.jpg",
+    "static/media/style.scss": "/NBA/static/media/warriors.c6f96cce.png",
+    "static/media/fog.png": "/NBA/static/media/fog.1d48ab7e.png",
     "static/media/logo-nba.png": "/NBA/static/media/logo-nba.7b728138.png"
   }
 }

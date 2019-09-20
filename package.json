@@ -1,0 +1,10 @@
+{
+  "name": "NBA",
+  "version": "1.0.0",
+  "description": "Landing Page NBA ",
+  "main": "index.js",
+  "repository": "https://github.com/W4GN3R/NBA.git",
+  "author": "Wagner Cruz",
+  "license": "MIT",
+  "private": false
+}
