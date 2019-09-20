@@ -12,8 +12,8 @@ let links = [
 
 let navLinks = links.map((nav, index) => {
     return (
-        <li className={"header-logos-item " + nav.img}  key={index}>
-            <Link className="header-logos-link" to={nav.link}>{nav.label}</Link>
+        <li className={"header-logos-item " + nav.img} key={index}>
+            <Link className="header-logos-link" id={nav.img} to={nav.link}>{nav.label}</Link>
         </li>
     )
 })

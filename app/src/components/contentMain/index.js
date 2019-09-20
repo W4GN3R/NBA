@@ -1,29 +1,38 @@
 import React from "react";
-import {Team, Wrapper, Player, WrapperPlayer, ImgPlayer, LogoPlayer, PrimaryName, ContentWrapper} from "./style"
 
-let Teams = [
-    {team: 'Los Angeles Lakers', PrimaryName: 'Lebron', Player: 'James', id: 'lakers'},
-    {team: 'Golden State Warriors', PrimaryName: 'Lebron', Player: 'James', id: 'warriors'},
-    {team: 'Boston Celtics', PrimaryName: 'Lebron', Player: 'James', id: 'celtics'},
-    {team: 'Toronto Raptors', PrimaryName: 'Lebron', Player: 'James', id: 'toronto'},
-    {team: 'Milwaukee Bucks', PrimaryName: 'Lebron', Player: 'James', id: 'bucks'},
-    {team: 'Houston Rockets', PrimaryName: 'Lebron', Player: 'James', id: 'houston'},
+import {Team, Wrapper, Player, WrapperPlayer, ImgPlayer, LogoPlayer, PrimaryName, ContentWrapper} from "./style"
+import './style.scss'
+
+const Teams = [
+    {team: 'Los Angeles Lakers', PrimaryNamePlayer: 'Lebron', Player: 'James', pathname: '/lakers', id: 'lakers'},
+    {team: 'Golden State Warriors', PrimaryNamePlayer: 'Stephen', Player: 'Curry', pathname: '/warriors', id: 'warriors'},
+    {team: 'Boston Celtics', PrimaryNamePlayer: 'Kyrie', Player: 'Irving', pathname: '/celtics', id: 'celtics'},
+    {team: 'Toronto Raptors', PrimaryNamePlayer: 'Kawhi ', Player: 'Leonard', pathname: '/toronto', id: 'toronto'},
+    {team: 'Milwaukee Bucks', PrimaryNamePlayer: 'giannis', Player: 'antetokounmpo', pathname: '/bucks', id: 'bucks'},
+    {team: 'Houston Rockets', PrimaryNamePlayer: 'James', Player: 'Harden', pathname: '/houston', id: 'houston'},
 ]
 
-
 const ContentMain = () => (
-    <>
-        <ContentWrapper>
-            <Wrapper>
-                <Team>Los Angeles Lakers</Team>
-                <PrimaryName>Lebron<Player> James</Player></PrimaryName>
-                <LogoPlayer/>
-            </Wrapper>
-            <WrapperPlayer>
-                <ImgPlayer/>
-            </WrapperPlayer>
-        </ContentWrapper>
-    </>
-);
+    <div className="center">
+        {Teams.map((page, index) => {
+            if(window.location.pathname === page.pathname) {
+                return (
+                    <ContentWrapper className={"backgroundcontent " + page.id} key={index}>
+                        <Wrapper>
+                            <Team>{page.team}</Team>
+                            <PrimaryName>{page.PrimaryNamePlayer}<Player className={"numberplayer " + page.id}> {page.Player}</Player></PrimaryName>
+                            <LogoPlayer className={"logoplayer " + page.id}/>
+                        </Wrapper>
+                        <WrapperPlayer>
+                            <ImgPlayer className={"playerteam " + page.id}/>
+                        </WrapperPlayer>
+                    </ContentWrapper>
+                )
+            }
+            return null;
+        })}
+    </div>
+)
+
 
 export default ContentMain; 

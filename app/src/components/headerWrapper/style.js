@@ -18,4 +18,5 @@ export const Wrapper = styled.header`
     flex-direction: column;
     position: relative;
     z-index: 99;
+    background: #000000b8;
 `;

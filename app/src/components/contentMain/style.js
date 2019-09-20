@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-import imgPlayer from "../../img/lakers/lebron-principal.png"
-import logoPlayer from "../../img/lakers/Lakers_logo.svg.png"
-
 export const ContentWrapper = styled.div`
     display: flex;
     justify-content: center;
@@ -33,7 +30,7 @@ export const Wrapper = styled.div`
     font-family: 'Raleway',sans-serif;
     padding: 30px;
     margin-top: 70px;
-
+    width: 100%;
 `;
 
 export const Player = styled.h2`
@@ -49,12 +46,12 @@ export const Player = styled.h2`
     flex-flow: row-reverse;
     color: #ffdc00;
     &:before {
-        content: "23";
+        content: "";
         display: flex;
         flex-direction: row-reverse;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width:1px;
-        -webkit-text-stroke-color: #cccccc21;
+        -webkit-text-stroke-color: #cccccc70;
         font-size: 115px;
         position: absolute;
         right: 90px;
@@ -81,17 +78,13 @@ export const WrapperPlayer = styled.div`
     display: flex;
 `;
 
-export const ImgPlayer = styled.img.attrs({
-    src: imgPlayer
-})`
+export const ImgPlayer = styled.div`
     height: 100vh;
-    transform: translateX(-160px);
 `;
 
 
-export const LogoPlayer = styled.img.attrs({
-    src: logoPlayer
-})`
+export const LogoPlayer = styled.div`
     width: 200px;
     margin-top: 50px;
+    height: 100vh;
 `;

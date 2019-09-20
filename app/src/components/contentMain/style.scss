@@ -1,0 +1,176 @@
+$PlayerLakers: "../../img/lakers/lebron-principal.png";
+$PlayerWarriors: "../../img/warriors/stephen.png";
+$PlayerCeltics: "../../img/boston/kyrie.png";
+$PlayerRaptors: "../../img/raptors/kawhi.png";
+$PlayerBucks: "../../img/bucks/giannis.png";
+$PlayerHouston: "../../img/rockets/james.png";
+
+$BackgroundLakers: "../../img/lakers/background.jpg";
+$BackgroundWarriors: "../../img/warriors/background.jpg";
+$BackgroundCeltics: "../../img/boston/background.jpg";
+$BackgroundRaptors: "../../img/raptors/background.jpg";
+$BackgroundBucks: "../../img/bucks/background.jpg";
+$BackgroundHouston: "../../img/rockets/background.jpg";
+
+$imgLakers: "../../img/lakers.png";
+$imgBucks: "../../img/bucks.png";
+$imgCeltics: "../../img/celtics.png";
+$imgRaptrors: "../../img/raptrors.png";
+$imgRockets: "../../img/rockets.png";
+$imgWarriors: "../../img/warriors.png";
+
+.playerteam {
+    transform: translateX(-180px);
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    &.lakers {
+        background: url($PlayerLakers) no-repeat;
+        background-size: contain;
+    }
+    &.warriors {
+        background: url($PlayerWarriors) no-repeat;
+        background-size: contain;
+        transform: translateX(-120px);
+    }
+    &.celtics {
+        background: url($PlayerCeltics) no-repeat;
+        background-size: 30%;
+        transform: translate(10px, 70px);
+    }
+    &.toronto {
+        background: url($PlayerRaptors) no-repeat;
+        background-size: contain;
+    }
+    &.bucks {
+        background: url($PlayerBucks) no-repeat;
+        background-size: contain;
+    }
+    
+    &.houston {
+        background: url($PlayerHouston) no-repeat;
+        background-size: contain;
+    }
+}
+
+.logoplayer {
+    &.lakers {
+        background: url($imgLakers) no-repeat;
+        background-size: 100%; 
+    }
+    &.warriors {
+        background: url($imgWarriors) no-repeat;
+        background-size: 100%; 
+    }
+    &.celtics {
+        background: url($imgCeltics) no-repeat;
+        background-size: 100%; 
+    }
+    &.toronto {
+        background: url($imgRaptrors) no-repeat;
+        background-size: 100%; 
+    }
+    &.bucks {
+        background: url($imgBucks) no-repeat;
+        background-size: 100%; 
+    }
+    
+    &.houston {
+        background: url($imgRockets) no-repeat;
+        background-size: 100%; 
+    }
+}
+
+.backgroundcontent{
+    &:before {
+        content: "";
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1; 
+        right: 0;
+    }
+    &.lakers {
+        &:before {
+            content: "";
+            background: url($BackgroundLakers) no-repeat;
+            background-size: 100%; 
+        }
+    }
+    &.warriors {
+        &:before {
+            content: "";
+            background: url($BackgroundWarriors) no-repeat;
+            background-size: 100%; 
+        }
+    }
+    &.celtics {
+        &:before {
+            content: "";
+            background: url($BackgroundCeltics) no-repeat;
+            background-size: 100%; 
+        }
+    }
+    &.toronto {
+        &:before {
+            content: "";
+            background: url($BackgroundRaptors) no-repeat;
+            background-size: 100%; 
+        }
+    }
+    &.bucks {
+        &:before {
+            content: "";
+            background: url($BackgroundBucks) no-repeat;
+            background-size: 100%; 
+        }
+    }
+    
+    &.houston {
+        &:before {
+            content: "";
+            background: url($BackgroundHouston) no-repeat;
+            background-size: 100%; 
+        }
+
+    }
+}
+
+.center {
+    margin: 0 auto 0 20%;
+}
+
+.numberplayer {
+    &.lakers {
+        &:before {
+            content: "23";
+        }
+    }
+    &.warriors {
+        &:before {
+            content: "30";
+        }
+    }
+    &.celtics {
+        &:before {
+            content: "11";
+        }
+    }
+    &.toronto {
+        &:before {
+            content: "2";
+        }
+    }
+    &.bucks {
+        &:before {
+            content: "34";
+        }
+    }
+    &.houston {
+        &:before {
+            content: "13";
+        }
+    }
+}
